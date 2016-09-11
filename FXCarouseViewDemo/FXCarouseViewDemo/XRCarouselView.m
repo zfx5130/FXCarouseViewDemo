@@ -62,6 +62,7 @@ static NSString *cache;
 
 #pragma mark nib创建
 - (void)awakeFromNib {
+    
     [self initSubView];
 }
 
