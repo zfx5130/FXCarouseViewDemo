@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "XRCarouselView.h"
+#import "Demo2ViewController.h"
 
 @interface ViewController ()
 <XRCarouselViewDelegate>
@@ -89,5 +90,12 @@
     [XRCarouselView clearDiskCache];
     
 }
+
+- (IBAction)swipButton:(UIButton *)sender {
+    Demo2ViewController * controller = [[Demo2ViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+    
+}
+
 
 @end

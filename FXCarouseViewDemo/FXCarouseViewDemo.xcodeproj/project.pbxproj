@@ -24,6 +24,18 @@
 		CE1B1EF21D85ABCD00720BAA /* OneImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1EF11D85ABCD00720BAA /* OneImageView.m */; };
 		CE1B1EF41D85ABDD00720BAA /* ThreeImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1EF31D85ABDD00720BAA /* ThreeImageView.xib */; };
 		CE1B1EF61D85AC0F00720BAA /* OneImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1EF51D85AC0F00720BAA /* OneImageView.xib */; };
+		CE1B1EFC1D85B9BB00720BAA /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1EF91D85B9BB00720BAA /* Demo2ViewController.m */; };
+		CE1B1EFD1D85B9BB00720BAA /* YYCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1EFB1D85B9BB00720BAA /* YYCell.m */; };
+		CE1B1F001D85B9C000720BAA /* YYNews.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1EFF1D85B9C000720BAA /* YYNews.m */; };
+		CE1B1F021D85B9DB00720BAA /* resource.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1F011D85B9DB00720BAA /* resource.plist */; };
+		CE1B1F051D85BBB100720BAA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1F041D85BBB100720BAA /* BaseViewController.m */; };
+		CE1B1F0C1D85BCF400720BAA /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1F071D85BCF400720BAA /* 01.jpg */; };
+		CE1B1F0D1D85BCF400720BAA /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1F081D85BCF400720BAA /* 02.jpg */; };
+		CE1B1F0E1D85BCF400720BAA /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1F091D85BCF400720BAA /* 03.jpg */; };
+		CE1B1F0F1D85BCF400720BAA /* 04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1F0A1D85BCF400720BAA /* 04.jpg */; };
+		CE1B1F101D85BCF400720BAA /* 05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1F0B1D85BCF400720BAA /* 05.jpg */; };
+		CE1B1F191D85BE5300720BAA /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1F171D85BE5300720BAA /* TestCollectionViewCell.m */; };
+		CE1B1F1A1D85BE5300720BAA /* TestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1F181D85BE5300720BAA /* TestCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +85,23 @@
 		CE1B1EF11D85ABCD00720BAA /* OneImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneImageView.m; sourceTree = "<group>"; };
 		CE1B1EF31D85ABDD00720BAA /* ThreeImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeImageView.xib; sourceTree = "<group>"; };
 		CE1B1EF51D85AC0F00720BAA /* OneImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneImageView.xib; sourceTree = "<group>"; };
+		CE1B1EF81D85B9BB00720BAA /* Demo2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo2ViewController.h; sourceTree = "<group>"; };
+		CE1B1EF91D85B9BB00720BAA /* Demo2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo2ViewController.m; sourceTree = "<group>"; };
+		CE1B1EFA1D85B9BB00720BAA /* YYCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCell.h; sourceTree = "<group>"; };
+		CE1B1EFB1D85B9BB00720BAA /* YYCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCell.m; sourceTree = "<group>"; };
+		CE1B1EFE1D85B9C000720BAA /* YYNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYNews.h; sourceTree = "<group>"; };
+		CE1B1EFF1D85B9C000720BAA /* YYNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYNews.m; sourceTree = "<group>"; };
+		CE1B1F011D85B9DB00720BAA /* resource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = resource.plist; sourceTree = "<group>"; };
+		CE1B1F031D85BBB100720BAA /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		CE1B1F041D85BBB100720BAA /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		CE1B1F071D85BCF400720BAA /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		CE1B1F081D85BCF400720BAA /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
+		CE1B1F091D85BCF400720BAA /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
+		CE1B1F0A1D85BCF400720BAA /* 04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 04.jpg; sourceTree = "<group>"; };
+		CE1B1F0B1D85BCF400720BAA /* 05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 05.jpg; sourceTree = "<group>"; };
+		CE1B1F161D85BE5300720BAA /* TestCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewCell.h; sourceTree = "<group>"; };
+		CE1B1F171D85BE5300720BAA /* TestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewCell.m; sourceTree = "<group>"; };
+		CE1B1F181D85BE5300720BAA /* TestCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +152,7 @@
 		CE1B1EA11D85A6A000720BAA /* FXCarouseViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CE1B1EF71D85B99F00720BAA /* WayTwo */,
 				CE1B1ED71D85A7AC00720BAA /* XRCarouselView.h */,
 				CE1B1ED81D85A7AC00720BAA /* XRCarouselView.m */,
 				CE1B1ED91D85A7AC00720BAA /* XRPlaceholder.png */,
@@ -173,6 +203,38 @@
 				CE1B1EC91D85A6A000720BAA /* Info.plist */,
 			);
 			path = FXCarouseViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		CE1B1EF71D85B99F00720BAA /* WayTwo */ = {
+			isa = PBXGroup;
+			children = (
+				CE1B1F061D85BCF400720BAA /* Image */,
+				CE1B1F031D85BBB100720BAA /* BaseViewController.h */,
+				CE1B1F041D85BBB100720BAA /* BaseViewController.m */,
+				CE1B1F011D85B9DB00720BAA /* resource.plist */,
+				CE1B1EFE1D85B9C000720BAA /* YYNews.h */,
+				CE1B1EFF1D85B9C000720BAA /* YYNews.m */,
+				CE1B1EF81D85B9BB00720BAA /* Demo2ViewController.h */,
+				CE1B1EF91D85B9BB00720BAA /* Demo2ViewController.m */,
+				CE1B1EFA1D85B9BB00720BAA /* YYCell.h */,
+				CE1B1EFB1D85B9BB00720BAA /* YYCell.m */,
+				CE1B1F161D85BE5300720BAA /* TestCollectionViewCell.h */,
+				CE1B1F171D85BE5300720BAA /* TestCollectionViewCell.m */,
+				CE1B1F181D85BE5300720BAA /* TestCollectionViewCell.xib */,
+			);
+			path = WayTwo;
+			sourceTree = "<group>";
+		};
+		CE1B1F061D85BCF400720BAA /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				CE1B1F071D85BCF400720BAA /* 01.jpg */,
+				CE1B1F081D85BCF400720BAA /* 02.jpg */,
+				CE1B1F091D85BCF400720BAA /* 03.jpg */,
+				CE1B1F0A1D85BCF400720BAA /* 04.jpg */,
+				CE1B1F0B1D85BCF400720BAA /* 05.jpg */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,13 +340,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1B1F0F1D85BCF400720BAA /* 04.jpg in Resources */,
+				CE1B1F0E1D85BCF400720BAA /* 03.jpg in Resources */,
+				CE1B1F1A1D85BE5300720BAA /* TestCollectionViewCell.xib in Resources */,
+				CE1B1F0C1D85BCF400720BAA /* 01.jpg in Resources */,
 				CE1B1EEC1D85AB8200720BAA /* FourImageView.xib in Resources */,
 				CE1B1EF61D85AC0F00720BAA /* OneImageView.xib in Resources */,
 				CE1B1EB21D85A6A000720BAA /* LaunchScreen.storyboard in Resources */,
 				CE1B1EE71D85A83E00720BAA /* 2.gif in Resources */,
+				CE1B1F021D85B9DB00720BAA /* resource.plist in Resources */,
+				CE1B1F101D85BCF400720BAA /* 05.jpg in Resources */,
 				CE1B1EDB1D85A7AC00720BAA /* XRPlaceholder.png in Resources */,
 				CE1B1EAF1D85A6A000720BAA /* Assets.xcassets in Resources */,
 				CE1B1EAD1D85A6A000720BAA /* Main.storyboard in Resources */,
+				CE1B1F0D1D85BCF400720BAA /* 02.jpg in Resources */,
 				CE1B1EF41D85ABDD00720BAA /* ThreeImageView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,12 +379,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1B1F001D85B9C000720BAA /* YYNews.m in Sources */,
+				CE1B1F191D85BE5300720BAA /* TestCollectionViewCell.m in Sources */,
 				CE1B1EF21D85ABCD00720BAA /* OneImageView.m in Sources */,
+				CE1B1F051D85BBB100720BAA /* BaseViewController.m in Sources */,
 				CE1B1EEA1D85AB6C00720BAA /* FourImageView.m in Sources */,
 				CE1B1EEF1D85ABB900720BAA /* ThreeImageView.m in Sources */,
 				CE1B1EAA1D85A6A000720BAA /* ViewController.m in Sources */,
 				CE1B1EA71D85A6A000720BAA /* AppDelegate.m in Sources */,
+				CE1B1EFD1D85B9BB00720BAA /* YYCell.m in Sources */,
 				CE1B1EDA1D85A7AC00720BAA /* XRCarouselView.m in Sources */,
+				CE1B1EFC1D85B9BB00720BAA /* Demo2ViewController.m in Sources */,
 				CE1B1EA41D85A6A000720BAA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
