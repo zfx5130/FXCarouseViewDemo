@@ -18,6 +18,12 @@
 		CE1B1EDA1D85A7AC00720BAA /* XRCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1ED81D85A7AC00720BAA /* XRCarouselView.m */; };
 		CE1B1EDB1D85A7AC00720BAA /* XRPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1ED91D85A7AC00720BAA /* XRPlaceholder.png */; };
 		CE1B1EE71D85A83E00720BAA /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1EE61D85A83E00720BAA /* 2.gif */; };
+		CE1B1EEA1D85AB6C00720BAA /* FourImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1EE91D85AB6C00720BAA /* FourImageView.m */; };
+		CE1B1EEC1D85AB8200720BAA /* FourImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1EEB1D85AB8200720BAA /* FourImageView.xib */; };
+		CE1B1EEF1D85ABB900720BAA /* ThreeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1EEE1D85ABB900720BAA /* ThreeImageView.m */; };
+		CE1B1EF21D85ABCD00720BAA /* OneImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1EF11D85ABCD00720BAA /* OneImageView.m */; };
+		CE1B1EF41D85ABDD00720BAA /* ThreeImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1EF31D85ABDD00720BAA /* ThreeImageView.xib */; };
+		CE1B1EF61D85AC0F00720BAA /* OneImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1B1EF51D85AC0F00720BAA /* OneImageView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,15 @@
 		CE1B1ED81D85A7AC00720BAA /* XRCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRCarouselView.m; sourceTree = "<group>"; };
 		CE1B1ED91D85A7AC00720BAA /* XRPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XRPlaceholder.png; sourceTree = "<group>"; };
 		CE1B1EE61D85A83E00720BAA /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
+		CE1B1EE81D85AB6C00720BAA /* FourImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourImageView.h; sourceTree = "<group>"; };
+		CE1B1EE91D85AB6C00720BAA /* FourImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourImageView.m; sourceTree = "<group>"; };
+		CE1B1EEB1D85AB8200720BAA /* FourImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourImageView.xib; sourceTree = "<group>"; };
+		CE1B1EED1D85ABB900720BAA /* ThreeImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeImageView.h; sourceTree = "<group>"; };
+		CE1B1EEE1D85ABB900720BAA /* ThreeImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeImageView.m; sourceTree = "<group>"; };
+		CE1B1EF01D85ABCD00720BAA /* OneImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneImageView.h; sourceTree = "<group>"; };
+		CE1B1EF11D85ABCD00720BAA /* OneImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneImageView.m; sourceTree = "<group>"; };
+		CE1B1EF31D85ABDD00720BAA /* ThreeImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeImageView.xib; sourceTree = "<group>"; };
+		CE1B1EF51D85AC0F00720BAA /* OneImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneImageView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +131,15 @@
 				CE1B1EA81D85A6A000720BAA /* ViewController.h */,
 				CE1B1EA91D85A6A000720BAA /* ViewController.m */,
 				CE1B1EE61D85A83E00720BAA /* 2.gif */,
+				CE1B1EE81D85AB6C00720BAA /* FourImageView.h */,
+				CE1B1EE91D85AB6C00720BAA /* FourImageView.m */,
+				CE1B1EEB1D85AB8200720BAA /* FourImageView.xib */,
+				CE1B1EED1D85ABB900720BAA /* ThreeImageView.h */,
+				CE1B1EEE1D85ABB900720BAA /* ThreeImageView.m */,
+				CE1B1EF31D85ABDD00720BAA /* ThreeImageView.xib */,
+				CE1B1EF01D85ABCD00720BAA /* OneImageView.h */,
+				CE1B1EF11D85ABCD00720BAA /* OneImageView.m */,
+				CE1B1EF51D85AC0F00720BAA /* OneImageView.xib */,
 				CE1B1EAB1D85A6A000720BAA /* Main.storyboard */,
 				CE1B1EAE1D85A6A000720BAA /* Assets.xcassets */,
 				CE1B1EB01D85A6A000720BAA /* LaunchScreen.storyboard */,
@@ -254,11 +278,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1B1EEC1D85AB8200720BAA /* FourImageView.xib in Resources */,
+				CE1B1EF61D85AC0F00720BAA /* OneImageView.xib in Resources */,
 				CE1B1EB21D85A6A000720BAA /* LaunchScreen.storyboard in Resources */,
 				CE1B1EE71D85A83E00720BAA /* 2.gif in Resources */,
 				CE1B1EDB1D85A7AC00720BAA /* XRPlaceholder.png in Resources */,
 				CE1B1EAF1D85A6A000720BAA /* Assets.xcassets in Resources */,
 				CE1B1EAD1D85A6A000720BAA /* Main.storyboard in Resources */,
+				CE1B1EF41D85ABDD00720BAA /* ThreeImageView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +310,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1B1EF21D85ABCD00720BAA /* OneImageView.m in Sources */,
+				CE1B1EEA1D85AB6C00720BAA /* FourImageView.m in Sources */,
+				CE1B1EEF1D85ABB900720BAA /* ThreeImageView.m in Sources */,
 				CE1B1EAA1D85A6A000720BAA /* ViewController.m in Sources */,
 				CE1B1EA71D85A6A000720BAA /* AppDelegate.m in Sources */,
 				CE1B1EDA1D85A7AC00720BAA /* XRCarouselView.m in Sources */,
@@ -512,6 +542,7 @@
 				CE1B1ECE1D85A6A000720BAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE1B1ECF1D85A6A000720BAA /* Build configuration list for PBXNativeTarget "FXCarouseViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +551,7 @@
 				CE1B1ED11D85A6A000720BAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE1B1ED21D85A6A000720BAA /* Build configuration list for PBXNativeTarget "FXCarouseViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +560,7 @@
 				CE1B1ED41D85A6A000720BAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

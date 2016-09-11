@@ -62,7 +62,6 @@ static NSString *cache;
 
 #pragma mark nib创建
 - (void)awakeFromNib {
-    
     [self initSubView];
 }
 
@@ -198,16 +197,7 @@ static NSString *cache;
         self.scrollView.contentSize = CGSizeMake(self.width * 5, 0);
         self.scrollView.contentOffset = CGPointMake(self.width * 2, 0);
         self.currImageView.frame = CGRectMake(self.width * 2, 0, self.width, self.height);
-        
-        if (_changeMode == ChangeModeFade) {
-            //淡入淡出模式，两个imageView都在同一位置，改变透明度就可以了
-            _currImageView.frame = CGRectMake(0, 0, self.width, self.height);
-            _otherImageView.frame = self.currImageView.frame;
-            _otherImageView.alpha = 0;
-            [self insertSubview:self.currImageView atIndex:0];
-            [self insertSubview:self.otherImageView atIndex:1];
-        }
-        
+    
         [self startTimer];
     } else {
         //只要一张图片时，scrollview不可滚动，且关闭定时器
@@ -290,20 +280,7 @@ static NSString *cache;
 }
 
 - (void)nextPage {
-    if (_changeMode == ChangeModeFade) {
-        //淡入淡出模式，不需要修改scrollview偏移量，改变两张图片的透明度即可
-        self.nextIndex = (self.currIndex + 1) % _images.count;
-        self.otherImageView.image = _images[_nextIndex];
-        
-        [UIView animateWithDuration:1.2 animations:^{
-            self.currImageView.alpha = 0;
-            self.otherImageView.alpha = 1;
-            self.pageControl.currentPage = _nextIndex;
-        } completion:^(BOOL finished) {
-            [self changeToNext];
-        }];
-        
-    } else [self.scrollView setContentOffset:CGPointMake(self.width * 3, 0) animated:YES];
+    [self.scrollView setContentOffset:CGPointMake(self.width * 3, 0) animated:YES];
 }
 
 
@@ -430,11 +407,7 @@ float durationWithSourceAtIndex(CGImageSourceRef source, NSUInteger index) {
     [self changeCurrentPageWithOffset:offsetX];
     //向右滚动
     if (offsetX < self.width * 2) {
-        if (_changeMode == ChangeModeFade) {
-            self.currImageView.alpha = offsetX / self.width - 1;
-            self.otherImageView.alpha = 2 - offsetX / self.width;
-        } else self.otherImageView.frame = CGRectMake(self.width, 0, self.width, self.height);
-        
+        self.otherImageView.frame = CGRectMake(self.width, 0, self.width, self.height);
         self.nextIndex = self.currIndex - 1;
         if (self.nextIndex < 0) self.nextIndex = _images.count - 1;
         self.otherImageView.image = self.images[self.nextIndex];
@@ -442,11 +415,7 @@ float durationWithSourceAtIndex(CGImageSourceRef source, NSUInteger index) {
         
     //向左滚动
     } else if (offsetX > self.width * 2){
-        if (_changeMode == ChangeModeFade) {
-            self.otherImageView.alpha = offsetX / self.width - 2;
-            self.currImageView.alpha = 3 - offsetX / self.width;
-        } else self.otherImageView.frame = CGRectMake(CGRectGetMaxX(_currImageView.frame), 0, self.width, self.height);
-        
+        self.otherImageView.frame = CGRectMake(CGRectGetMaxX(_currImageView.frame), 0, self.width, self.height);
         self.nextIndex = (self.currIndex + 1) % _images.count;
         self.otherImageView.image = self.images[self.nextIndex];
         if (offsetX >= self.width * 3) [self changeToNext];
@@ -454,10 +423,6 @@ float durationWithSourceAtIndex(CGImageSourceRef source, NSUInteger index) {
 }
 
 - (void)changeToNext {
-    if (_changeMode == ChangeModeFade) {
-        self.currImageView.alpha = 1;
-        self.otherImageView.alpha = 0;
-    }
     //切换到下一张图片
     self.currImageView.image = self.otherImageView.image;
     self.scrollView.contentOffset = CGPointMake(self.width * 2, 0);
@@ -477,7 +442,6 @@ float durationWithSourceAtIndex(CGImageSourceRef source, NSUInteger index) {
 
 //该方法用来修复滚动过快导致分页异常的bug
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    if (_changeMode == ChangeModeFade) return;
     CGPoint currPointInSelf = [_scrollView convertPoint:_currImageView.frame.origin toView:self];
     if (currPointInSelf.x >= -self.width / 2 && currPointInSelf.x <= self.width / 2)
         [self.scrollView setContentOffset:CGPointMake(self.width * 2, 0) animated:YES];
@@ -499,8 +463,4 @@ UIImage *gifImageNamed(NSString *imageName) {
     
     return [UIImage imageNamed:imageName];
 }
-
-
-
-
 

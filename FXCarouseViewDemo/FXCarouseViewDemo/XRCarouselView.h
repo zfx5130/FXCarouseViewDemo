@@ -20,14 +20,6 @@ typedef enum {
     PositionBottomRight     //右下
 } PageControlPosition;
 
-//图片切换的方式
-typedef enum {
-    ChangeModeDefault,  //轮播滚动
-    ChangeModeFade      //淡入淡出
-} ChangeMode;
-
-
-
 /**
  *  代理
  */
@@ -62,13 +54,6 @@ UIImage *gifImageNamed(NSString *imageName);
 
 
 #pragma mark 属性
-
-
-/**
- *  设置图片的切换模式，默认为ChangeModeDefault
- */
-@property (nonatomic, assign) ChangeMode changeMode;
-
 
 /**
  *  设置图片的内容模式，默认为UIViewContentModeScaleToFill
